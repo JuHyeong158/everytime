@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+
+#logo > a {
+  float: left; display: block; margin: 20px 16px 20px 0; width: 40px; height: 40px;
+}
+#logo > a > img {
+  width: 100%; height: 100%;
+}
+#logo > p {
+  float: left;
+}
+#logo > p > span.name {
+  display: block; color: #c62917; font-size: 18px; font-weight: bold;
+}
+
+#logo > p > span.name.single {
+  line-height: 76px;
+}
+#logo > p > span.name.multiple {
+  margin-top: 20px; margin-left: 3px; line-height: 15px; font-size: 12px;
+}
+#logo > p > span.subname {
+  display: block; line-height: 25px; color: #292929; font-size: 22px;
+}
+#account {
+  padding: 20px 0; box-sizing: border-box; font-size: 0;
+}
+#account a {
+  position: relative; display: inline-block; margin-left: 4px; height: 40px; line-height: 40px; box-sizing: border-box; border: 1px solid #d6d6d6; border-radius: 12px; vertical-align: top;
+}
+#account a.button {
+  padding: 0 12px; color: #737373; font-size: 14px;
+}
+#account a.button.red {
+  border: 0; color: #fff; font-weight: bold; background-color: #c62917;
+}
+
+
+/*** no insert account 끝까지***/
+#account a.icon {
+  width: 40px; color: transparent; font-size: 0; background-repeat: no-repeat; background-position: center center;
+}
+#account a.icon.message {
+  background-image: url('/images/common/icn_m_chat_gray800_light.png'); background-size: 24px 24px;
+}
+#account a.icon.my {
+  background-image: url('/images/common/icn_m_account_gray800_light.png'); background-size: 24px 24px;
+}
+#account a.icon span.badge {
+  position: absolute; right: -4px; top: -4px; display: inline-block; padding: 0 6px; line-height: 16px; border-radius: 10px; color: #fff; font-size: 12px; font-weight: bold; background-color: #c62917;
+}
+
+#menu > li > a {
+  color: #444444; font-size: 16px; font-weight: bold;
+}
+#menu > li > a:hover,
+#menu > li.active > a {
+  color: #c62917;
+}
+
+
+#submenu {
+  border-bottom: 1px solid #d6d6d6; background-color: #f2f2f2;
+}
+#submenu > div.wrap {
+  box-sizing: border-box; font-size: 0; text-align: center; white-space: nowrap; overflow: hidden; overflow-x: auto;
+}
+#submenu > div.wrap > div.divider {
+  display: inline-block; width: 1px; height: 200px; background-color: #e3e3e3;
+}
+#submenu > div.wrap > div.group {
+  display: inline-block; vertical-align: top; box-sizing: border-box; text-align: left;
+}
+#submenu > div.wrap > div.group.hidden {
+  display: none;
+}
+
+/*** no insert***/
+#submenu > div.wrap > div.group > h3 {
+  line-height: 25px; color: #292929; font-weight: bold;
+}
+#submenu > div.wrap > div.group > ul > li > a {
+  display: block; line-height: 25px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+/*** no insert***/
+#submenu > div.wrap > div.group > ul > li > a.more {
+  color: #c62917; font-weight: bold; cursor: pointer;
+}
+#submenu > div.wrap > div.group > ul > li > a.search {
+  color: #c62917; font-weight: bold;
+}
+/*** no insert submenu hr전까지***/
+#submenu > div.wrap > ul > li {
+  display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#submenu > div.wrap ul > li > a {
+  color: #444444;
+}
+#submenu > div.wrap ul > li > a.active {
+  color: #c62917; font-weight: bold;
+}
+#submenu > div.wrap ul > li > a.search {
+  color: #a6a6a6;
+}
+#submenu > div.wrap ul > li > a:hover {
+  color: #c62917;
+}
+#submenu > div.wrap ul > li > a.new:after {
+  content: ''; display: inline-block; margin-left: 5px; margin-bottom: 2px; width: 4px; height: 4px; background: transparent url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjRweCIgaGVpZ2h0PSI0cHgiIHZpZXdCb3g9IjAgMCA0IDQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxICgzNTMyNikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+bmV3PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9InBjIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iaG9tZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM2Ni4wMDAwMDAsIC0xMjUuMDAwMDAwKSIgZmlsbD0iIzBDQTVBRiI+CiAgICAgICAgICAgIDxnIGlkPSJzdWJtZW51IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgODEuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4OC4wMDAwMDAsIDAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0ibmV3IiBjeD0iODAiIGN5PSI0NiIgcj0iMiI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==') no-repeat center center; background-size: 4px 4px;
+}
+#submenu hr {
+  clear: both; height: 0; border: 0;
+}
+
+@media only screen and (min-width: 641px) {
+
+
+
+  nav {
+    position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 80px; border-bottom: 1px solid #d6d6d6; background-color: #fff;
+  }
+  nav > div.wrap {
+    margin: 0 auto; width: 1180px; height: 100%;
+  }
+  #logo {
+    float: left; margin-left: 24px; height: 100%;
+  }
+  #account {
+    float: right; margin-right: 24px; height: 100%;
+  }
+  #menu {
+    margin: 0 auto; width: 600px; height: 100%; font-size: 0; text-align: center;
+  }
+  #menu > li {
+    display: inline-block; margin: 0 12px; height: 76px; line-height: 76px;
+  }
+  #menu > li.active {
+    border-bottom: 4px solid #c62917;
+  }
+
+
+
+
+
+  #submenu {
+    margin-top: 80px;
+  }
+  #submenu > div.wrap {
+    padding: 15px;
+  }
+  #submenu > div.wrap > div.divider {
+    margin-right: 15px;
+  }
+  #submenu > div.wrap > div.group {
+    margin-right: 15px; width: 130px;
+  }
+  #submenu > div.wrap > div.group > h3,
+  #submenu > div.wrap > div.group > ul > li > a {
+    font-size: 13px;
+  }
+  #submenu > div.wrap > ul {
+    margin: -3px auto; max-width: 780px; font-size: 0; white-space: normal;
+  }
+  #submenu > div.wrap > ul > li {
+    margin: 3px 10px; max-width: 130px;
+  }
+  #submenu > div.wrap > ul > li > a {
+    font-size: 14px;
+  }
